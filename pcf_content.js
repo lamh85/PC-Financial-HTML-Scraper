@@ -1,7 +1,7 @@
-//secure.pcfinancial.ca/en/login
+import { usernameInput, passwordInput } from './content_script/get_element.js'
 
-https: console.log('running from content script')
+console.log('running from content script')
 
-const elem = document.querySelector('a[href*="login"]')
+console.log(usernameInput)
 
-console.log(elem)
+console.log(passwordInput)

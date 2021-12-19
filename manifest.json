@@ -9,7 +9,7 @@
   "permissions": ["activeTab"],
   "content_scripts": [
     {
-      "matches": ["https://*.pcfinancial.ca/*"],
+      "matches": ["https://secure.pcfinancial.ca/en/*"],
       "js": ["pcf_content.js"]
     }
   ]
