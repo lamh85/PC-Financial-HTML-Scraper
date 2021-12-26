@@ -12,5 +12,11 @@
   "dependencies": {
     "dotenv": "^10.0.0"
   },
-  "prettier": { "semi": false, "singleQuote": true }
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "webpack": "^5.65.0"
+  }
 }
