@@ -13,14 +13,14 @@ module.exports = {
     hot: true,
   },
   devtool: 'inline-source-map',
-  entry: './src/index.js',
-  module: {
-    rules: [{ test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }],
-  },
+  entry: './src/pcf_content.js',
+  // module: {
+  //   rules: [{ test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }],
+  // },
   output: {
     // Generated in memory, not physical file.
     // Has options to programmatically format filename.
-    filename: 'main.js',
+    filename: 'pcf_content.js',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
