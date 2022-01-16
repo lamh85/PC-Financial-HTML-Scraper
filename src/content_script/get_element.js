@@ -11,8 +11,10 @@ const getElem = async (cssSelector) => {
   return foundElem
 }
 
-const usernameInput = await getElem('input#username')
+export default getElem
 
-const passwordInput = await getElem('input#password')
+// const usernameInput = await getElem('input#username')
 
-export { usernameInput, passwordInput }
+// const passwordInput = await getElem('input#password')
+
+// export { usernameInput, passwordInput }

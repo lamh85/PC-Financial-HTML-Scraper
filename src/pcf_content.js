@@ -1,7 +1,11 @@
-import { usernameInput, passwordInput } from './content_script/get_element.js'
+import GetElement from './content_script/get_element.js'
 
-console.log('running from content script')
+console.log('running from content script again again')
 
-console.log(usernameInput)
+const inputElem = await GetElement('input#username')
 
-console.log(passwordInput)
+const passwordElem = await GetElement('input#password')
+
+console.log(inputElem)
+
+console.log(passwordElem)
