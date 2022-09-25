@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const CopyWebpack = require('copy-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -26,5 +27,15 @@ module.exports = {
   experiments: {
     topLevelAwait: true,
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new CopyWebpack({
+      patterns: [
+        path.resolve(__dirname, 'src', 'manifest.json'),
+        path.resolve(__dirname, 'src', 'popup.html'),
+        path.resolve(__dirname, 'src', 'popup.js'),
+        path.resolve(__dirname, 'src', 'styles.css'),
+      ],
+    }),
+  ],
 }
